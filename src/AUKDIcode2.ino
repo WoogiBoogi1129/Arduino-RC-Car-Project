@@ -1,3 +1,4 @@
+// 230515 update
 #include <SoftwareSerial.h>
 
 int blueTx = 2;
@@ -111,6 +112,12 @@ void loop() {
     }
     if(value == 's'){
       Stop();
+    }
+    if(value == 'r'){
+      FR();
+    }
+    if(value == 'l'){
+      FL();
     }
   }
 }
